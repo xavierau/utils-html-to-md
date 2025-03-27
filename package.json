@@ -1,0 +1,30 @@
+{
+  "name": "convert_html_to_md",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production pnpm install --prod",
+    "start": "NODE_ENV=production node server.js",
+    "pm2:start": "NODE_ENV=production pm2 start pm2.json",
+    "pm2:stop": "pm2 stop pm2.json",
+    "pm2:restart": "NODE_ENV=production pm2 startOrReload pm2.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.4",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "sanitize-html": "^2.15.0",
+    "turndown": "^7.2.0",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}
